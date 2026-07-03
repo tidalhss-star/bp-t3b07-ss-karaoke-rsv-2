@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="상수 가라오케 예약 꿀팁 대방출! 브로가 알려주는 단체 예약 꿀팁, 음향 꿀조합, 그리고 놓치면 안 되는 센스 있는 예약 방법. 지금 확인하고 상수역 가라오케 예약 전화 010-6279-0862로 바로 걸어.">
+    <meta name="keywords" content="상수 가라오케 예약, 상수 가라오케 블로그, 상수 노래방 후기, 상수 가라오케 꿀팁, 홍대 가라오케 예약, 상수 단체 예약 팁">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b07-ss-karaoke-rsv-2.vercel.app/blog">
+    <meta property="og:title" content="상수 가라오케 예약 꿀팁 | 브로들 전용 블로그">
+    <meta property="og:description" content="진짜 상수 가라오케 예약, 이렇게 하면 센스 백배. 브로들이 직접 겪은 꿀팁 대방출. 예약은 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-ss-karaoke-rsv-2.vercel.app/blog">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>블로그 | 상수 가라오케 예약 꿀팁</title>
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            background-color: #0b0b0b;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+            background: #0b0b0b;
+            color: #e0e0e0;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: #f0f0f0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #d4ff00;
+        }
+        ul, ol {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font: inherit;
+            color: inherit;
+        }
+        /* TYPOGRAPHY */
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 4rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            line-height: 1.1;
+            color: #f5f5f5;
+            text-shadow: 4px 4px 0 #1f1f1f, 6px 6px 0 #d4ff00;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.4rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            border-left: 6px solid #d4ff00;
+            padding-left: 1rem;
+            margin: 2.5rem 0 1.2rem;
+            color: #eaeaea;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            font-weight: 600;
+            margin: 1.8rem 0 0.8rem;
+            color: #f0f0f0;
+        }
+        .text-small {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            letter-spacing: 0.02em;
+        }
+        /* LAYOUT CONSTANTS */
+        :root {
+            --gap: 1.2rem;
+            --section-padding: 3rem 1.5rem;
+            --max-width: 1200px;
+            --container-padding: 0 1.5rem;
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--container-padding);
+        }
+        section {
+            padding: var(--section-padding);
+            border-bottom: 1px solid #2a2a2a;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* NAVIGATION — brutalist bar */
+        nav {
+            background: #111;
+            border-bottom: 3px solid #d4ff00;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .nav-brand {
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: -0.03em;
+            color: #d4ff00;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+        }
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+            padding: 0.2rem 0;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #d4ff00;
+            transform: scaleX(0);
+            transition: transform 0.2s;
+        }
+        .nav-links a:hover::after {
+            transform: scaleX(1);
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            padding: 0.3rem;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background: #d4ff00;
+            border-radius: 2px;
+            transition: 0.2s;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #d4ff00;
+            color: #0b0b0b;
+            font-weight: 700;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            transition: background 0.2s, color 0.2s;
+            border: 2px solid #d4ff00;
+        }
+        .tel-link:hover {
+            background: transparent;
+            color: #d4ff00;
+        }
+
+        /* responsive 768 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #1a1a1a;
+                padding: 1.5rem 0 1rem;
+                gap: 1.2rem;
+                border-top: 2px solid #2f2f2f;
+                margin-top: 0.8rem;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+
+        /* BLOG CARD / CONTENT */
+        .blog-card {
+            background: #151515;
+            border: 2px solid #2a2a2a;
+            padding: 2rem 2rem 2.5rem;
+            margin: 2rem 0;
+            box-shadow: 8px 8px 0 #1e1e1e;
+            transition: 0.2s;
+        }
+        .blog-card:hover {
+            border-color: #d4ff00;
+            box-shadow: 8px 8px 0 #3a3a3a;
+        }
+        .blog-meta {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+            margin-bottom: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .blog-meta .badge {
+            background: #2b2b2b;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            color: #d4ff00;
+            font-weight: 600;
+            border: 1px solid #3f3f3f;
+        }
+        .blog-card p {
+            margin: 1.2rem 0;
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .blog-card ul {
+            list-style: disc;
+            padding-left: 1.8rem;
+            margin: 1rem 0 1.5rem;
+            color: #bbb;
+        }
+        .blog-card ul li {
+            margin-bottom: 0.4rem;
+        }
+        .blog-card .highlight {
+            background: #222;
+            border-left: 4px solid #d4ff00;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+        .blog-card .cta-inline {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px dashed #3a3a3a;
+        }
+        .btn-phone {
+            display: inline-block;
+            background: #d4ff00;
+            color: #0b0b0b;
+            font-weight: 700;
+            padding: 0.6rem 2rem;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            border: 2px solid #d4ff00;
+            transition: 0.2s;
+            letter-spacing: 0.02em;
+        }
+        .btn-phone:hover {
+            background: transparent;
+            color: #d4ff00;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-top: 1px solid #2a2a2a;
+            color: #777;
+            font-size: 0.8rem;
+            margin-top: auto;
+        }
+
+        /* extra brutal touches */
+        .brutal-divider {
+            width: 80px;
+            height: 4px;
+            background: #d4ff00;
+            margin: 1rem 0 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 네비게이션 (전체 공통) -->
+<nav>
+    <div class="nav-brand">◼︎ 상수K</div>
+    <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('active')">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+        <a href="/">홈</a>
+        <a href="/about">소개</a>
+        <a href="/blog">블로그</a>
+        <a href="/gallery">갤러리</a>
+        <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+    </div>
+</nav>
+
+<!-- 메인 콘텐츠: 블로그 정보성 글 1편 -->
+<main class="container" style="flex:1; padding-top: 2rem; padding-bottom: 2rem;">
+    <article class="blog-card">
+        <div class="blog-meta">
+            <span class="badge">🎤 브로 꿀팁</span>
+            <span>2025.03.21</span>
+            <span>by 상수에서 밤샘 브로</span>
+        </div>
+        <h1 style="font-size: clamp(1.8rem, 6vw, 3rem); text-shadow: 3px 3px 0 #1f1f1f, 5px 5px 0 #d4ff00; margin-bottom: 0.2rem;">상수 가라오케 예약<br>진짜 후회 없는 꿀팁 5</h1>
+        <div class="brutal-divider"></div>
+        <p><strong>“야, 상수 가라오케 예약하려는데 어디가 좋아?”</strong> — 이거 들으면 나도 모르게 고개가 끄덕여지는 그런 질문. 브로들끼리 단체로 가기엔 상수역 근처 가라오케만 한 데가 없지. 내가 진짜 여러 번 가보고, 예약도 수십 번 해본 입장에서 알려주는 <strong>찐 꿀팁</strong>이니까 끝까지 봐. (전화 번호는 맨 아래에 있음, 센스 있게 미리 저장 ㄱㄱ)</p>
+
+        <h3>1️⃣ 예약은 무조건 전화로 해라</h3>
+        <p>카톡이나 문자로 “예약 가능한가요?” 하면 답이 늦어. 상수 가라오케 예약은 즉석에서 바로 확정이 생명이야. 내가 전화해서 “형, 8명인데 오늘 밤 10시에 갈게” 하면 끝. 게다가 단체 예약이면 음향이랑 마이크 추가로 챙겨주는 경우도 많더라고. <strong>010-6279-0862</strong> — 이거 내가 항상 거는 번호야. 예약도 빠르고 친절해.</p>
+
+        <h3>2️⃣ 골든타임은 목~토 저녁 9시 이후</h3>
+        <p>사실 상수역 가라오케는 주말이 골드타임. 근데 <strong>금요일 밤 11시</strong>쯤 가면 분위기 미쳤어. 조명도 감성 터지고, 브로들끼리 <em>“야 이 노래 내가 부른다”</em> 하면서 마이크 뺏는 재미가 있음. 단, 인기 시간대니까 전화 예약은 <strong>최소 2시간 전</strong>에 해야 자리 안정적이야.</p>
+
+        <div class="highlight">
+            💡 <strong>브로의 경험:</strong> 지난주에 예약 안 하고 찾아갔다가 40분 기다렸어. 근데 웨이팅 하는 동안 앞에 편의점에서 맥주 한 캔 하니까 시간 금방 가더라. 그래도 예약이 짱이다.
+        </div>
+
+        <h3>3️⃣ 단체 예약은 인원수 +2명 여유 있게</h3>
+        <p>처음에 6명 예약했는데 갑자기 “야 나 친구 데려와도 돼?” 하면서 2명 더 오는 거, 너무 흔한 일이잖아? 그래서 나는 예약할 때 <strong>“8명이요~”</strong> 하고 살짝 부풀려. 그러면 룸도 넉넉하게 주고, 나중에 추가 인원 와도 당황 안 해. 상수 가라오케는 단체 룸이 꽤 커서 10명도 거뜬하더라.</p>
+
+        <h3>4️⃣ 음향 꿀조합: 마이크 리버브는 3, 볼륨은 7</h3>
+        <p>가끔 가라오케 가면 마이크 울림이 너무 심하거나 먹먹할 때 있지? 내가 발견한 세팅이야. 리버브를 3 정도로 맞추고, 볼륨은 7 (10 기준). 그러면 목소리가 찢어지지도 않고 감성적으로 잘 나와. 특히 <strong>버즈의 ‘가시’</strong>나 <strong>10cm의 ‘폰서트’</strong> 부를 때 이 세팅으로 하면 분위기 장난 아님.</p>
+
+        <h3>5️⃣ 예약 전에 꼭 확인할 것</h3>
+        <ul>
+            <li><strong>마이크 개수:</strong> 4명 이상이면 마이크 2개 이상인지 확인 (보통 기본 2개, 추가 가능)</li>
+            <li><strong>음료/안주:</strong> 일부 룸은 기본 음료 서비스 있음. 전화할 때 “안주 뭐 있어요?” 물어보면 친절히 알려줌</li>
+            <li><strong>주차:</strong> 상수역 근처라 주차장이 협소하니까 대중교통 or 대리 추천</li>
+            <li><strong>노래 검색:</strong> 최신곡 업데이트 잘 되는 곳인지? (여기는 꾸준히 업뎃 됨, 나 토
+</body>
+</html>
